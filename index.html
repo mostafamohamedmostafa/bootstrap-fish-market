@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Dream Car</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon"
+    href="data:image/png;base64,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">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/c4a989ea76.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!--Start Nav Bar-->
+  <nav class="navbar navbar-expand-lg  ">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span> طيبه للاسماك </span><span>و الماكولات البحريه</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">من نحن <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الوجبات</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">فروع المطعم</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">الفريق</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">الاتصال بنا</a>
+          </li>
+
+
+          <li class="nav-item">
+            <button class="btn btn-style">هيا اطلب</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--ENd Nav Bar-->
+  <!--Start Intro Video-->
+  <section class="intro-video">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+
+          <video autoplay loop width="100%" height="70%">
+            <source src="intro-movie.mp4" type="video/mp4">
+          </video>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--ENd Intro Video-->
+
+  <!--Start Silder-->
+
+  <div id="main-slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#main-slider" data-slide-to="1"></li>
+      <li data-target="#main-slider" data-slide-to="2"></li>
+      <li data-target="#main-slider" data-slide-to="3"></li>
+      <li data-target="#main-slider" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p>نحن نقدم الذ <span>سمك لك</span>من البحر الي المائده </p>
+
+        <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2015/10/12/15/13/fish-984299_960_720.jpg"
+          alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <p>نحن نقدم الذ <span>سمك لك</span>من البحر الي المائده </p>
+
+        <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg"
+          alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <p>نحن نقدم الذ <span>سمك لك</span>من البحر الي المائده </p>
+        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/03/05/18/30/spaghetti-660748_960_720.jpg"
+          alt="Third slide">
+      </div>
+
+      <div class="carousel-item">
+        <p>نحن نقدم الذ <span>سمك لك</span>من البحر الي المائده </p>
+        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/06/28/17/32/salmon-1485014_960_720.jpg"
+          alt="Forth slide">
+      </div>
+
+      <div class="carousel-item">
+        <p>نحن نقدم الذ <span>سمك لك</span>من البحر الي المائده </p>
+        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/01/24/18/17/scampi-3953047_960_720.jpg"
+          alt="Fifth slide">
+      </div>
+    </div>
+
+  </div>
+  <!--ENd Silder-->
+
+
+
+
+
+  <!--Start Intro-->
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md intro-header">
+          <h2 class="animated">مطعم طيبه للماكولات البحريه و الاسماك</h2>
+          <p>مطعم متخصص في وجبات السمك </p>
+        </div>
+
+        <div class="col-md">
+          <img class="img-fluid animated"
+            src="https://cdn.pixabay.com/photo/2018/04/21/11/48/fishing-3338291_960_720.png" alt="">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--End Intro-->
+  <!--Start Services-->
+  <section id="featured-services" class="featured-services">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-3 col-md-6 ">
+          <div class="featured-services-box">
+            <img src="https://cdn.pixabay.com/photo/2020/03/01/20/24/lobster-4894015_960_720.jpg" alt=""
+              class="img-fluid">
+            <h3>طبق مميز 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 ">
+          <div class="featured-services-box">
+            <img src="https://cdn.pixabay.com/photo/2015/10/17/21/39/food-993457_960_720.jpg" alt="" class="img-fluid">
+            <h3>طبق مميز 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="featured-services-box">
+            <img src="https://cdn.pixabay.com/photo/2015/09/04/11/00/colorful-921902_960_720.jpg" alt=""
+              class="img-fluid">
+            <h3>طبق مميز 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="featured-services-box">
+            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2018/07/24/20/54/shrimp-3560003_960_720.jpg"
+              alt="">
+
+            <h3>طبق مميز 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--End Services-->
+
+  
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row ">
+
+        <div class="col-lg-3 col-6 text-center">
+          <i class="fas fa-concierge-bell"></i>
+          <p>خدمه مميزه</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <i class="fas fa-fish"></i>
+          <p>  وجبات مميزه</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <i class="fas fa-cloud-sun-rain"></i>
+          <p>العمل طول اليوم</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <i class="fas fa-motorcycle"></i>
+          <p>توصيل مجاني</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Counts Section -->
+  <!-- Start Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="service-header">
+        <h2>خدماتنا و منتاجتنا</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus?</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2018/07/24/20/54/shrimp-3560003_960_720.jpg">
+            <h4>خدمه 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img src="https://cdn.pixabay.com/photo/2015/09/04/11/00/colorful-921902_960_720.jpg" alt=""
+            class="img-fluid">
+            <h4>خدمه 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img src="https://cdn.pixabay.com/photo/2015/10/17/21/39/food-993457_960_720.jpg" alt="" class="img-fluid">
+            <h4>خدمه 3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img src="https://cdn.pixabay.com/photo/2020/03/01/20/24/lobster-4894015_960_720.jpg" alt=""
+              class="img-fluid">
+            <h4>خدمه 4</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img src="https://cdn.pixabay.com/photo/2020/03/01/20/24/lobster-4894015_960_720.jpg" alt=""
+              class="img-fluid">
+            <h4>وجبه 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img src="https://cdn.pixabay.com/photo/2015/10/17/21/39/food-993457_960_720.jpg" alt="" class="img-fluid">
+            <h4>وجبه 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- End Services Section -->
+
+
+  
+
+  <!--Start Testimonials  Work Section -->
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>اراء العملاء</h2>
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-1.jpg"></img>
+            <h4>احمد</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-2.jpg"></img>
+            <h4>منه</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-3.jpg"></img>
+            <h4>اسراء</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-4.jpg"></img>
+            <h4>محمود</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-5.jpg"></img>
+            <h4>محمد</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img src="testimonials-2.jpg"></img>
+            <h4>مديحه</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <!--End Testimonials  Work Section -->
+
+
+  <!--Start Posts Work Section -->
+  <section class="team">
+    <div class="container">
+      <h3 class="text-center">فريق عملنا</h3>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore
+        magna aliqua Ut enim veniam </p>
+      <div class="row">
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-1.jpg" alt="Card image cap">
+              <h5 class="card-title">عضو 1</h5>
+              <h6 class="card-subtitle mb-2 text-muted">CEO</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-2.jpg" alt="Card image cap">
+              <h5 class="card-title">عضو 2</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Excetive</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-3.jpg" alt="Card image cap">
+              <h5 class="card-title">عضو 3</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Staff</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!--End Posts Work Section -->
+
+  <!--Start Contact Section -->
+  <section class="contact ">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>الاتصال بنا</h2>
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="address">
+
+              <h4><i class="fas fa-map-signs"></i>Location:</h4>
+              <p>Alexandria Egypt</p>
+            </div>
+
+            <div class="email">
+              <h4><i class="fas fa-at"></i> Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <h4> <i class="fas fa-phone-volume"></i>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218360.36364995778!2d29.814800765744582!3d31.224034935279008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1590424766998!5m2!1sen!2seg"
+              width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6 mt-5 mt-lg-0  ">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" data-rule="required"
+                data-msg="Please write something for us"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center "><button class="btn-warning" type="submit ">Send Message</button></div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--End Contact Section -->
+  <!--Start Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="site-info">
+            <span> طيبه للاسماك </span><span>و الماكولات البحريه</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam. quis nostrud exercitation ullamco laboris commodo conse.</p>
+            <i class="fas fa-arrow-right"> <a href="">Read More</a></i>
+
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="helpful-links">
+            <h4>Helpful Links</h4>
+            <div class="row">
+              <div class="col text-center">
+                <ul class="list-unstyled">
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">About</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Portfolio</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Team</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Projects</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href=""> Services</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-us">
+            <h5>Contact US</h5>
+            <ul class="list-unstyled">
+              <li class="list-item"><i class="fas fa-map-marker-alt"></i>ALexandria Egypt</li>
+              <li class="list-item"><i class="fas fa-phone-alt"></i> 011111111111111111</li>
+              <li class="list-item"><i class="fas fa-at"></i><a href="">dev.moustapha@gmail.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!--End FOoter Section -->
+  <!--Start Copy right Section -->
+
+  <section class="copy-right">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col text-left">
+          <h6>COPYRIGHT 2020 &copy; AWESOME CAR | ALL RIGHTS RESERVED</h6>
+        </div>
+        <div class="col text-right">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-facebook-square"></i>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Copy right Section -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="counterup.min.js"></script>
+
+</body>
+
+</html>
