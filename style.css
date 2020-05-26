@@ -123,24 +123,25 @@ body{font-family: 'Philosopher', sans-serif;}
     color: black;
     font-size: 2.4rem;
 }
-
+/*
 .intro-section h2::first-letter {
  font-style: italic;
     color: blue;
 
 }
-
+*/
 .intro-section p {
     font-weight: bold;
     color: gray;
     font-size: 2rem;
 }
+/*
 .intro-section p::first-letter {
     font-style: italic;
        color: blue;
    
    }
-   
+ */  
 .intro-section .get-started {
     font-weight: bold;
     color: white;
@@ -355,11 +356,11 @@ body{font-family: 'Philosopher', sans-serif;}
     color: black;
     margin: 3rem;
 }
-
+/*
 .team h3::first-letter {
     color: blue;
 }
-
+*/
 .team p {
     color: #72757d;
     font-size: 1.1rem;
@@ -469,10 +470,14 @@ body{font-family: 'Philosopher', sans-serif;}
     font-style: italic;
 
 }
+
+/*
 .card h5::first-letter {
    color: blue;
 
 }
+
+*/
 .card h6 {
     color: black;
     font-weight: bold;
@@ -508,12 +513,13 @@ body{font-family: 'Philosopher', sans-serif;}
     color: black;
 
 }
+/*
 
 .portfolio .section-title h2::first-letter {
     font-weight: bold;
     color: blue;
 }
-
+*/
 .portfolio .portfolio-item {
     margin-bottom: 30px;
 }
@@ -566,21 +572,23 @@ body{font-family: 'Philosopher', sans-serif;}
     color: black;
 }
 
+
+/*
 .testimonials h2::first-letter {
 
     color: blue;
 }
-
+*/
 .testimonials-section .testimonials-header h2 {
     color: black;
 
 }
-
+/*
 .testimonials-box h4:first-letter {
     color: blue;
 
 }
-
+*/
 .testimonials .testimonials-box {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
